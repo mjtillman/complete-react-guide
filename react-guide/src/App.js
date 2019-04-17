@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import HelloWorld from './HelloWorld/HelloWorld';
 // Create TWO new components: UserInput and UserOutput
 // UserInput should hold an input element, UserOutput two paragraphs
 // Output multiple UserOutput components in the App component (any paragraph texts of your choice)
@@ -12,11 +12,14 @@ import './App.css';
 // Add two-way-binding to your input (in UserInput) to also display the starting username
 // Add styling of your choice to your components/ elements in the components - both with inline styles and stylesheets
 
-
 class App extends Component {
   render() {
     return (
-    "hello"
+      <div>
+        <HelloWorld />
+        <HelloWorld />
+        <HelloWorld />
+      </div>
     );
   }
 }
